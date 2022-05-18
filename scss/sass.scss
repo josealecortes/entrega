@@ -2,8 +2,34 @@
     background: linear-gradient(90deg, rgba(187,219,226,1) 0%, rgba(255,255,255,1) 100%, rgba(0,212,255,1) 100%);
 
 }
-.body-index {
+$redes: (
+	twitter: #51aff8,
+	facebook: #2956a3,
+	linkedin: #0076b8,
+	Instagram: #d33ccb
+);  
+
+@each $red, $color in $redes {
+    .container--#{$red} {
+        background: $color;
+        .mb-0 {
+            background: white;
+            .fab {
+                color: $color;
+            }
+        }
+    }
+}
+
+@mixin transparencia {
+    display: flex;
+    background: white;
     background-image: url(./multimedia/bestrans-transparencia.jpg);
+}
+
+
+.body-index {
+    @include transparencia;
     padding: 5px;
     margin: auto;
 }
@@ -15,6 +41,8 @@
     }
     padding: 10px;
 }
+
+
 .bg-dark {background: linear-gradient(90deg, rgba(187,219,226,1) 0%, rgba(255,255,255,1) 100%, rgba(0,212,255,1) 100%);
     margin: auto;
     padding: 5px;
@@ -59,7 +87,9 @@
     padding: 5px;
 
     h5 {font-size: medium;}
-    p { font-size: small;}
+    p { 
+        @extend p;
+        font-size: small;}
 }
 
 @media screen and (min-width:768px) {
