@@ -2,8 +2,6 @@
   background: linear-gradient(90deg, #bbdbe2 0%, white 100%, #00d4ff 100%); }
 
 .body-index {
-  display: flex;
-  background: white;
   background-image: url(./multimedia/bestrans-transparencia.jpg);
   padding: 5px;
   margin: auto; }
@@ -53,34 +51,8 @@
   padding: 5px; }
   .faq-main h5 {
     font-size: medium; }
-
-.container--twitter {
-  background: #51aff8; }
-  .container--twitter .mb-0 {
-    background: white; }
-    .container--twitter .mb-0 .fab {
-      color: #51aff8; }
-
-.container--facebook {
-  background: #2956a3; }
-  .container--facebook .mb-0 {
-    background: white; }
-    .container--facebook .mb-0 .fab {
-      color: #2956a3; }
-
-.container--linkedin {
-  background: #0076b8; }
-  .container--linkedin .mb-0 {
-    background: white; }
-    .container--linkedin .mb-0 .fab {
-      color: #0076b8; }
-
-.container--Instagram {
-  background: #d33ccb; }
-  .container--Instagram .mb-0 {
-    background: white; }
-    .container--Instagram .mb-0 .fab {
-      color: #d33ccb; }
+  .faq-main p {
+    font-size: small; }
 
 @media screen and (min-width: 768px) {
   .menu-index {

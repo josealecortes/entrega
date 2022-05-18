@@ -2,13 +2,8 @@
     background: linear-gradient(90deg, rgba(187,219,226,1) 0%, rgba(255,255,255,1) 100%, rgba(0,212,255,1) 100%);
 
 }
-@mixin transparencia {
-    display: flex;
-    background: white;
-    background-image: url(./multimedia/bestrans-transparencia.jpg);
-}
 .body-index {
-    @include transparencia; 
+    background-image: url(./multimedia/bestrans-transparencia.jpg);
     padding: 5px;
     margin: auto;
 }
@@ -58,29 +53,13 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     }
 }
+
 .faq-main {
     margin: auto;
     padding: 5px;
 
     h5 {font-size: medium;}
-    
-}
-$redes: (
-	twitter: #51aff8,
-	facebook: #2956a3,
-	linkedin: #0076b8,
-	Instagram: #d33ccb
-);  
-@each $red, $color in $redes {
-    .container--#{$red} {
-        background: $color;
-        .mb-0 {
-            background: white;
-            .fab {
-                color: $color;
-            }
-        }
-    }
+    p { font-size: small;}
 }
 
 @media screen and (min-width:768px) {
